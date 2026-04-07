@@ -16,10 +16,10 @@ export default function Navbar() {
           </div>
         </div>
         <div className="hidden md:flex gap-8 font-headline font-medium text-sm tracking-tight">
-          <a className="text-[#FF5F5E] font-semibold border-b-2 border-[#FF5F5E]/50 pb-1" href="#servicios">{t('Servicios', 'Services')}</a>
-          <a className="text-[#5a413f] hover:text-[#FF5F5E] transition-colors" href="#proyectos">{t('Proyectos', 'Projects')}</a>
-          <a className="text-[#5a413f] hover:text-[#FF5F5E] transition-colors" href="#nosotros">{t('Nosotros', 'About Us')}</a>
-          <a className="text-[#5a413f] hover:text-[#FF5F5E] transition-colors" href="#contacto">{t('Contacto', 'Contact')}</a>
+          <a className="text-[#5a413f] hover:text-[#FF5F5E] border-b-2 border-transparent hover:border-[#FF5F5E]/50 pb-1 transition-all" href="#servicios">{t('Servicios', 'Services')}</a>
+          <a className="text-[#5a413f] hover:text-[#FF5F5E] border-b-2 border-transparent hover:border-[#FF5F5E]/50 pb-1 transition-all" href="#proyectos">{t('Proyectos', 'Projects')}</a>
+          <a className="text-[#5a413f] hover:text-[#FF5F5E] border-b-2 border-transparent hover:border-[#FF5F5E]/50 pb-1 transition-all" href="#nosotros">{t('Nosotros', 'About Us')}</a>
+          <a className="text-[#5a413f] hover:text-[#FF5F5E] border-b-2 border-transparent hover:border-[#FF5F5E]/50 pb-1 transition-all" href="#contacto">{t('Contacto', 'Contact')}</a>
         </div>
         <div className="flex items-center gap-4">
           <button 

@@ -15,7 +15,9 @@ export default function Hero() {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary-container/10 rounded-full">
             <span className="w-2 h-2 rounded-full bg-primary-container"></span>
-            <span className="text-[10px] font-bold uppercase tracking-widest text-on-primary-fixed-variant font-headline">Ingeniería de Gestión de Espacios Corporativos</span>
+            <span className="text-[10px] font-bold uppercase tracking-widest text-on-primary-fixed-variant font-headline">
+              {t('Ingeniería de Gestión de Espacios Corporativos', 'Corporate Space Management Engineering')}
+            </span>
           </div>
           <h1 className="text-5xl lg:text-7xl font-extrabold font-headline leading-[1.1] tracking-tight text-on-surface">
             {t('Instalación Profesional de ', 'Professional ')}<span className="text-primary-container/50">{t('Mobiliario de Oficina', 'Office Furniture')}</span>{t('', ' Installation')}
