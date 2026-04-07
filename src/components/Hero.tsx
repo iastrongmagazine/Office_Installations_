@@ -20,10 +20,10 @@ export default function Hero() {
             </span>
           </div>
           <h1 className="text-5xl lg:text-7xl font-extrabold font-headline leading-[1.1] tracking-tight text-on-surface">
-            {t('Instalación Profesional de ', 'Professional ')}<span className="text-primary-container/50">{t('Mobiliario de Oficina', 'Office Furniture')}</span>{t('', ' Installation')}
+            {t('Transformamos espacios en ', 'We transform spaces into ')}<span className="text-primary-container/50">{t('entornos inspiradores', 'inspiring environments')}</span>
           </h1>
           <p className="text-lg text-on-surface-variant max-w-lg leading-relaxed">
-            {t('Desde 2018, brindamos servicios confiables y de alta calidad en ensamblaje, reconfiguración y reubicación de mobiliario para espacios corporativos y residenciales.', 'Since 2018, we have provided reliable, high-quality furniture assembly, reconfiguration, and relocation services for corporate and residential spaces.')}
+            {t('Expertos en instalación, reconfiguración y mudanza de mobiliario corporativo. Cuidamos cada detalle para que tu equipo trabaje mejor y tu empresa no se detenga.', 'Experts in corporate furniture installation, reconfiguration, and relocation. We take care of every detail so your team can work better and your business never stops.')}
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
             <motion.a 
@@ -52,8 +52,8 @@ export default function Hero() {
               <span className="block text-xs text-on-surface-variant font-medium">{t('de Experiencia', 'Experience')}</span>
             </div>
             <div className="space-y-1">
-              <span className="block text-xl font-bold font-headline text-on-surface">{t('Bilingüe', 'Bilingual')}</span>
-              <span className="block text-xs text-on-surface-variant font-medium">{t('Inglés y Español', 'English & Español')}</span>
+              <span className="block text-xl font-bold font-headline text-on-surface">{t('Precisión', 'Precision')}</span>
+              <span className="block text-xs text-on-surface-variant font-medium">{t('Garantizada', 'Guaranteed')}</span>
             </div>
             <div className="space-y-1">
               <span className="block text-xl font-bold font-headline text-on-surface">{t('Licencia', 'Licensed')}</span>

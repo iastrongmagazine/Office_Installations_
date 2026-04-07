@@ -9,8 +9,8 @@ export default function Services() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
           <div className="max-w-2xl">
-            <h2 className="text-4xl font-extrabold font-headline tracking-tight mb-4">{t('Soluciones Integrales de Instalación', 'Comprehensive Installation Solutions')}</h2>
-            <p className="text-on-surface-variant">{t('Manejamos cada aspecto técnico del mobiliario de oficina, desde escritorios ejecutivos individuales hasta reconfiguraciones completas de pisos corporativos.', 'We handle every technical aspect of office furniture, from single executive desks to complete corporate floor reconfigurations.')}</p>
+            <h2 className="text-4xl font-extrabold font-headline tracking-tight mb-4">{t('Nuestros Servicios', 'Our Services')}</h2>
+            <p className="text-on-surface-variant">{t('Nos especializamos en crear entornos de trabajo funcionales y estéticos. Desde la instalación de un solo escritorio hasta la reubicación completa de su empresa, garantizamos precisión y cuidado en cada paso.', 'We specialize in creating functional and aesthetic work environments. From installing a single desk to completely relocating your company, we guarantee precision and care at every step.')}</p>
           </div>
           <div className="hidden md:block">
             <span className="text-primary-container font-bold text-sm tracking-widest uppercase">{t('Nuestra Experiencia', 'Our Expertise')}</span>
@@ -50,7 +50,7 @@ export default function Services() {
               <span className="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-primary-container">architecture</span>
               </span>
-              <h3 className="text-2xl font-bold font-headline mb-4">{t('Configuración y Reconfiguración de Oficinas', 'Office Setup & Reconfiguration')}</h3>
+              <h3 className="text-2xl font-bold font-headline mb-4">{t('Configuración y Reconfiguración', 'Office Setup & Reconfiguration')}</h3>
               <ul className="space-y-3 text-sm text-on-surface-variant">
                 <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-primary-container"></span> {t('Nuevas configuraciones de oficina', 'New office setups')}</li>
                 <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-primary-container"></span> {t('Rediseño de espacios de trabajo', 'Workspace redesign')}</li>
