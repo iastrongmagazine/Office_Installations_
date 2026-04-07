@@ -4,22 +4,40 @@ import React, { useState } from 'react';
 
 export default function Contact() {
   const { t } = useLanguage();
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [formData, setFormData] = useState({
     name: '',
     company: '',
     phone: '',
-    service: 'Office Furniture Installation'
+    service: 'Office Furniture Installation',
+    details: ''
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = `Nueva Solicitud de Cotización de ${formData.name}`;
-    const body = `Nombre: ${formData.name}%0D%0AEmpresa: ${formData.company}%0D%0ATeléfono: ${formData.phone}%0D%0ATipo de Servicio: ${formData.service}`;
-    window.location.href = `mailto:oiminstallllc@gmail.com?subject=${subject}&body=${body}`;
+    setStatus('submitting');
+    
+    try {
+      const message = `*Nueva Solicitud de Cotización*
+Nombre: ${formData.name}
+Empresa: ${formData.company || 'N/A'}
+Teléfono: ${formData.phone}
+Servicio: ${formData.service}
+Detalles: ${formData.details || 'Ninguno'}`;
+
+      const whatsappUrl = `https://wa.me/14705950121?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+      
+      setStatus('success');
+      setFormData({ name: '', company: '', phone: '', service: 'Office Furniture Installation', details: '' });
+    } catch (error) {
+      console.error('Error redirecting to WhatsApp:', error);
+      setStatus('error');
+    }
   };
 
   return (
@@ -36,7 +54,14 @@ export default function Contact() {
                 <span className="material-symbols-outlined text-primary-container">location_on</span>
                 <div className="text-sm">
                   <p className="font-bold mb-1">{t('Ubicación', 'Location')}</p>
-                  <p className="text-white/60">Atlanta, Georgia</p>
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=3715+NORTHCREST+RD+SUITE+19,+ATLANTA,+GA+30340" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-white/60 hover:text-primary-container transition-colors block"
+                  >
+                    3715 NORTHCREST RD SUITE 19<br/>ATLANTA, GA 30340
+                  </a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -85,13 +110,31 @@ export default function Contact() {
                   <option value="Commercial Project">{t('Proyecto Comercial', 'Commercial Project')}</option>
                 </select>
               </div>
+              <div className="space-y-2">
+                <label className="text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">{t('Detalles Adicionales (Opcional)', 'Additional Details (Optional)')}</label>
+                <textarea name="details" value={formData.details} onChange={handleChange} rows={3} className="w-full bg-surface-container-low border-none rounded-xl px-4 py-4 text-sm focus:ring-2 focus:ring-secondary/50 outline-none transition-all resize-none" placeholder={t('Explique brevemente su consulta o requerimiento específico...', 'Briefly explain your inquiry or specific requirement...')}></textarea>
+              </div>
+              
+              {status === 'success' && (
+                <div className="bg-[#25D366]/10 text-[#25D366] p-4 rounded-xl text-sm font-medium border border-[#25D366]/20">
+                  {t('Mensaje Enviado con Éxito, dentro de poco un Director del Equipo se pondrá en comunicación con usted.', 'Message Sent Successfully, a Team Director will contact you shortly.')}
+                </div>
+              )}
+              
+              {status === 'error' && (
+                <div className="bg-error/10 text-error p-4 rounded-xl text-sm font-medium border border-error/20">
+                  {t('Hubo un error al enviar el mensaje. Por favor, intente nuevamente o contáctenos por teléfono.', 'There was an error sending the message. Please try again or contact us by phone.')}
+                </div>
+              )}
+
               <motion.button 
                 type="submit"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full bg-primary-container text-on-primary font-bold py-5 rounded-xl hover:opacity-90 transition-all shadow-lg shadow-primary-container/20 mt-4"
+                disabled={status === 'submitting'}
+                whileHover={{ scale: status === 'submitting' ? 1 : 1.02 }}
+                whileTap={{ scale: status === 'submitting' ? 1 : 0.98 }}
+                className={`w-full text-on-primary font-bold py-5 rounded-xl transition-all shadow-lg mt-4 ${status === 'submitting' ? 'bg-primary-container/70 cursor-not-allowed' : 'bg-primary-container hover:opacity-90 shadow-primary-container/20'}`}
               >
-                {t('Solicitar Cotización', 'Request Quote')}
+                {status === 'submitting' ? t('Enviando...', 'Sending...') : t('Solicitar Cotización', 'Request Quote')}
               </motion.button>
             </form>
           </div>
