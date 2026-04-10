@@ -13,9 +13,9 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="lg:col-span-6 space-y-8"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary-container/10 rounded-full">
-            <span className="w-2 h-2 rounded-full bg-primary-container"></span>
-            <span className="text-[10px] font-bold uppercase tracking-widest text-on-primary-fixed-variant font-headline">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/10 rounded-full">
+            <span className="w-2 h-2 rounded-full bg-secondary"></span>
+            <span className="text-[10px] font-bold uppercase tracking-widest text-secondary font-headline">
               {t('Ingeniería de Gestión de Espacios Corporativos', 'Corporate Space Management Engineering')}
             </span>
           </div>

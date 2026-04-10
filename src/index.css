@@ -11,7 +11,7 @@
   --color-surface-container-low: #f3f4f5;
   --color-surface-container-highest: #e1e3e4;
   --color-outline-variant: #d1d4d5;
-  --color-secondary: #006591;
+  --color-secondary: #0a1d37;
   
   --font-headline: "Plus Jakarta Sans", sans-serif;
   --font-body: "Inter", sans-serif;
@@ -19,7 +19,7 @@
 
 @layer utilities {
   .glass-nav {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(10, 29, 55, 0.95);
     backdrop-filter: blur(20px);
   }
   .hero-gradient {

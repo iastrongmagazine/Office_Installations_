@@ -78,7 +78,7 @@ export default function Services() {
           {/* Service 4 */}
           <motion.div 
             whileHover={{ y: -5, boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)' }}
-            className="md:col-span-2 bg-[#191c1d] text-white p-8 lg:p-12 rounded-xl relative overflow-hidden transition-all group"
+            className="md:col-span-2 bg-secondary text-white p-8 lg:p-12 rounded-xl relative overflow-hidden transition-all group"
           >
             <div className="relative z-10 flex flex-col h-full justify-center">
               <div className="flex items-center gap-4 mb-4">

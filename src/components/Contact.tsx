@@ -44,7 +44,7 @@ Detalles: ${formData.details || 'Ninguno'}`;
     <section className="py-24 px-6 lg:px-12 bg-surface-container-low/50" id="contacto">
       <div className="max-w-7xl mx-auto">
         <div className="bg-surface-container-lowest rounded-[2rem] shadow-2xl shadow-black/5 overflow-hidden grid grid-cols-1 lg:grid-cols-2">
-          <div className="p-12 lg:p-20 space-y-12 bg-[#191c1d] text-white">
+          <div className="p-12 lg:p-20 space-y-12 bg-secondary text-white">
             <div>
               <h2 className="text-4xl font-extrabold font-headline mb-6">{t('Construyamos tu espacio de trabajo.', "Let's build your workspace.")}</h2>
               <p className="text-white/60 leading-relaxed">{t('Nuestra área de servicio incluye Atlanta, Marietta, Alpharetta, Lawrenceville y los suburbios circundantes.', 'Our service area includes Atlanta, Marietta, Alpharetta, Lawrenceville, and surrounding suburbs.')}</p>

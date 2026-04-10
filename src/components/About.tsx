@@ -23,7 +23,7 @@ export default function About() {
             </div>
           </div>
           {/* Decorative element */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-primary-container/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-secondary/20 rounded-full blur-3xl"></div>
         </motion.div>
         <motion.div 
           initial={{ opacity: 0, x: 20 }}
