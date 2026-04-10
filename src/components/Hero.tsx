@@ -20,7 +20,7 @@ export default function Hero() {
             </span>
           </div>
           <h1 className="text-5xl lg:text-7xl font-extrabold font-headline leading-[1.1] tracking-tight text-on-surface">
-            {t('Transformamos espacios en ', 'We transform spaces into ')}<span className="text-primary-container/50">{t('entornos inspiradores', 'inspiring environments')}</span>
+            {t('Transformamos espacios en ', 'We transform spaces into ')}<span className="text-primary-container">{t('entornos inspiradores', 'inspiring environments')}</span>
           </h1>
           <p className="text-lg text-on-surface-variant max-w-lg leading-relaxed">
             {t('Expertos en instalación, reconfiguración y mudanza de mobiliario corporativo. Cuidamos cada detalle para que tu equipo trabaje mejor y tu empresa no se detenga.', 'Experts in corporate furniture installation, reconfiguration, and relocation. We take care of every detail so your team can work better and your business never stops.')}

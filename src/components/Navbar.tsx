@@ -8,18 +8,20 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 glass-nav shadow-sm shadow-black/5">
       <div className="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
-        <div className="flex items-center gap-2">
-          <Drill className="w-7 h-7 text-[#191c1d]" />
+        <div className="flex items-center gap-3">
+          <div className="border-2 border-primary-container p-1 rounded-lg flex items-center justify-center">
+            <Drill className="w-6 h-6 text-primary-container" />
+          </div>
           <div className="flex flex-col justify-center">
-            <span className="text-xl font-black tracking-tight text-[#191c1d] font-headline leading-none uppercase">Office</span>
-            <span className="text-[9px] font-bold tracking-[0.2em] text-[#191c1d] uppercase mt-0.5">Installations</span>
+            <span className="text-2xl font-black tracking-tighter text-primary-container font-headline leading-none">OIM</span>
+            <span className="text-[7px] font-bold tracking-widest text-on-surface uppercase mt-0.5">Office Installations Mayen</span>
           </div>
         </div>
         <div className="hidden md:flex gap-8 font-headline font-medium text-sm tracking-tight">
-          <a className="text-[#5a413f] hover:text-[#FF5F5E] border-b-2 border-transparent hover:border-[#FF5F5E]/50 pb-1 transition-all" href="#servicios">{t('Servicios', 'Services')}</a>
-          <a className="text-[#5a413f] hover:text-[#FF5F5E] border-b-2 border-transparent hover:border-[#FF5F5E]/50 pb-1 transition-all" href="#proyectos">{t('Proyectos', 'Projects')}</a>
-          <a className="text-[#5a413f] hover:text-[#FF5F5E] border-b-2 border-transparent hover:border-[#FF5F5E]/50 pb-1 transition-all" href="#nosotros">{t('Nosotros', 'About Us')}</a>
-          <a className="text-[#5a413f] hover:text-[#FF5F5E] border-b-2 border-transparent hover:border-[#FF5F5E]/50 pb-1 transition-all" href="#contacto">{t('Contacto', 'Contact')}</a>
+          <a className="text-[#5a413f] hover:text-primary-container border-b-2 border-transparent hover:border-primary-container/50 pb-1 transition-all" href="#servicios">{t('Servicios', 'Services')}</a>
+          <a className="text-[#5a413f] hover:text-primary-container border-b-2 border-transparent hover:border-primary-container/50 pb-1 transition-all" href="#proyectos">{t('Proyectos', 'Projects')}</a>
+          <a className="text-[#5a413f] hover:text-primary-container border-b-2 border-transparent hover:border-primary-container/50 pb-1 transition-all" href="#nosotros">{t('Nosotros', 'About Us')}</a>
+          <a className="text-[#5a413f] hover:text-primary-container border-b-2 border-transparent hover:border-primary-container/50 pb-1 transition-all" href="#contacto">{t('Contacto', 'Contact')}</a>
         </div>
         <div className="flex items-center gap-4">
           <button 

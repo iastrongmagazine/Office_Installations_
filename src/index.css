@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-container: #ff5f5e;
-  --color-on-primary: #ffffff;
-  --color-on-primary-fixed-variant: #910819;
+  --color-primary-container: #FFD200;
+  --color-on-primary: #191c1d;
+  --color-on-primary-fixed-variant: #6B5400;
   --color-surface: #f8f9fa;
   --color-on-surface: #191c1d;
-  --color-on-surface-variant: #5a413f;
+  --color-on-surface-variant: #4a4d4e;
   --color-surface-container-lowest: #ffffff;
   --color-surface-container-low: #f3f4f5;
   --color-surface-container-highest: #e1e3e4;
-  --color-outline-variant: #e1bebc;
+  --color-outline-variant: #d1d4d5;
   --color-secondary: #006591;
   
   --font-headline: "Plus Jakarta Sans", sans-serif;
