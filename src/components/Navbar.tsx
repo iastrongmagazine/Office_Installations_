@@ -25,7 +25,7 @@ export default function Navbar() {
             onClick={toggleLang}
             className="text-white/80 font-headline font-bold text-xs tracking-tight cursor-pointer hover:text-primary-container transition-all duration-300 bg-white/10 px-3 py-1.5 rounded-full"
           >
-            {lang === 'es' ? 'EN' : 'ES'}
+            {lang === 'en' ? 'ES' : 'EN'}
           </button>
           <motion.a 
             href="#contacto"
