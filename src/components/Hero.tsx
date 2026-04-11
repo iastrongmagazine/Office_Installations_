@@ -13,11 +13,19 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="lg:col-span-6 space-y-8"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/10 rounded-full">
-            <span className="w-2 h-2 rounded-full bg-secondary"></span>
-            <span className="text-[10px] font-bold uppercase tracking-widest text-secondary font-headline">
-              {t('Ingeniería de Gestión de Espacios Corporativos', 'Corporate Space Management Engineering')}
-            </span>
+          <div className="flex flex-wrap gap-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/10 rounded-full">
+              <span className="w-2 h-2 rounded-full bg-secondary"></span>
+              <span className="text-[10px] font-bold uppercase tracking-widest text-secondary font-headline">
+                {t('Ingeniería de Gestión de Espacios Corporativos', 'Corporate Space Management Engineering')}
+              </span>
+            </div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary-container/20 rounded-full">
+              <span className="material-symbols-outlined text-[14px] text-on-primary-fixed-variant">location_on</span>
+              <span className="text-[10px] font-bold uppercase tracking-widest text-on-primary-fixed-variant font-headline">
+                {t('Atlanta y alrededores', 'Atlanta & Surrounding Areas')}
+              </span>
+            </div>
           </div>
           <h1 className="text-5xl lg:text-7xl font-extrabold font-headline leading-[1.1] tracking-tight text-on-surface">
             {t('Instalación de Mobiliario de Oficina y ', 'Office Furniture Installation & ')}<span className="text-primary-container">{t('Configuración de Espacios', 'Workspace Setup')}</span>
