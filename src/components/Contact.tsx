@@ -55,7 +55,9 @@ Detalles: ${formData.details || 'Ninguno'}`;
                 <div className="text-sm">
                   <p className="font-bold mb-1">{t('Ubicación', 'Location')}</p>
                   <a 
-                    href="#mapa"
+                    href="https://www.google.com/maps/search/?api=1&query=3715+NORTHCREST+RD+SUITE+19,+ATLANTA,+GA+30340" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
                     className="text-white/60 hover:text-primary-container transition-colors block text-left"
                   >
                     3715 NORTHCREST RD SUITE 19<br/>ATLANTA, GA 30340

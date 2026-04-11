@@ -57,7 +57,9 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-primary-container shrink-0" />
                 <a 
-                  href="#mapa"
+                  href="https://www.google.com/maps/search/?api=1&query=3715+NORTHCREST+RD+SUITE+19,+ATLANTA,+GA+30340" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="hover:text-primary-container transition-colors text-left"
                 >
                   3715 NORTHCREST RD SUITE 19, ATLANTA, GA 30340
