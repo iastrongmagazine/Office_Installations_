@@ -28,10 +28,10 @@ export default function MapSection() {
                   </span>
                 </motion.div>
                 <h2 className="text-4xl lg:text-5xl font-extrabold font-headline leading-tight tracking-tighter">
-                  {t('Atlanta y Región Metro', 'Atlanta & Metro Region')}
+                  {t('Atlanta y alrededores', 'Atlanta and Surrounding Area')}
                 </h2>
                 <p className="mt-6 text-white/50 text-sm leading-relaxed max-w-sm">
-                  {t('Brindamos servicios de instalación profesional en todo el estado de Georgia, con enfoque principal en el área metropolitana de Atlanta.', 'Providing professional installation services across the entire state of Georgia, with a primary focus on the Atlanta metropolitan area.')}
+                  {t('Brindamos servicios de instalación profesional en todo el estado de Georgia, cubriendo Atlanta y todas sus áreas circundantes.', 'Providing professional installation services across the entire state of Georgia, covering Atlanta and all surrounding areas.')}
                 </p>
               </div>
 
