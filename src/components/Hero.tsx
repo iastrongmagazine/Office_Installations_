@@ -20,10 +20,10 @@ export default function Hero() {
             </span>
           </div>
           <h1 className="text-5xl lg:text-7xl font-extrabold font-headline leading-[1.1] tracking-tight text-on-surface">
-            {t('Transformamos espacios en ', 'We transform spaces into ')}<span className="text-primary-container">{t('entornos inspiradores', 'inspiring environments')}</span>
+            {t('Instalación de Mobiliario de Oficina y ', 'Office Furniture Installation & ')}<span className="text-primary-container">{t('Configuración de Espacios', 'Workspace Setup')}</span>
           </h1>
           <p className="text-lg text-on-surface-variant max-w-lg leading-relaxed">
-            {t('Expertos en instalación, reconfiguración y mudanza de mobiliario corporativo. Cuidamos cada detalle para que tu equipo trabaje mejor y tu empresa no se detenga.', 'Experts in corporate furniture installation, reconfiguration, and relocation. We take care of every detail so your team can work better and your business never stops.')}
+            {t('Instalación profesional de mobiliario de oficina, cubículos, escritorios, brazos para monitores, televisores, pizarras blancas, pizarras de vidrio y configuraciones completas de estaciones de trabajo.', 'Professional installation of office furniture, cubicles, desks, monitor arms, TVs, whiteboards, glass boards, and full workstation setups.')}
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
             <motion.a 
