@@ -1,12 +1,16 @@
 import { useLanguage } from '../context/LanguageContext';
 import { Instagram, Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { useState } from 'react';
+import MapModal from './MapModal';
 
 export default function Footer() {
   const { t } = useLanguage();
+  const [isMapOpen, setIsMapOpen] = useState(false);
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="w-full bg-secondary text-white rounded-t-[3rem] mt-20 overflow-hidden">
+      <MapModal isOpen={isMapOpen} onClose={() => setIsMapOpen(false)} />
       <div className="max-w-7xl mx-auto px-6 lg:px-12 pt-20 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
@@ -56,7 +60,12 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-white/60">
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-primary-container shrink-0" />
-                <span>3715 NORTHCREST RD SUITE 19, ATLANTA, GA 30340</span>
+                <button 
+                  onClick={() => setIsMapOpen(true)}
+                  className="hover:text-primary-container transition-colors text-left"
+                >
+                  3715 NORTHCREST RD SUITE 19, ATLANTA, GA 30340
+                </button>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-primary-container shrink-0" />
