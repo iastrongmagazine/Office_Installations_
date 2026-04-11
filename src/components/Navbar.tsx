@@ -1,6 +1,5 @@
 import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
-import { Drill } from 'lucide-react';
 
 export default function Navbar() {
   const { lang, toggleLang, t } = useLanguage();
@@ -18,7 +17,7 @@ export default function Navbar() {
           <a className="text-white/80 hover:text-primary-container border-b-2 border-transparent hover:border-primary-container/50 pb-1 transition-all" href="#servicios">{t('Servicios', 'Services')}</a>
           <a className="text-white/80 hover:text-primary-container border-b-2 border-transparent hover:border-primary-container/50 pb-1 transition-all" href="#proyectos">{t('Proyectos', 'Projects')}</a>
           <a className="text-white/80 hover:text-primary-container border-b-2 border-transparent hover:border-primary-container/50 pb-1 transition-all" href="#nosotros">{t('Nosotros', 'About Us')}</a>
-          <a className="text-white/80 hover:text-primary-container border-b-2 border-transparent hover:border-primary-container/50 pb-1 transition-all" href="#contacto">{t('Contacto', 'Contact')}</a>
+          <a className="text-white/80 hover:text-primary-container border-b-2 border-transparent hover:border-primary-container/50 pb-1 transition-all" href="#mapa">{t('Área de Servicio', 'Service Area')}</a>
         </div>
         <div className="flex items-center gap-4">
           <button 

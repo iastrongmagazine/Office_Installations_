@@ -17,6 +17,15 @@
   --font-body: "Inter", sans-serif;
 }
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-body text-on-surface bg-surface;
+  }
+}
+
 @layer utilities {
   .glass-nav {
     background-color: rgba(10, 29, 55, 0.95);

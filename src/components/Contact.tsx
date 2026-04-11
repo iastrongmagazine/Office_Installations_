@@ -1,11 +1,9 @@
 import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import React, { useState } from 'react';
-import MapModal from './MapModal';
 
 export default function Contact() {
   const { t } = useLanguage();
-  const [isMapOpen, setIsMapOpen] = useState(false);
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [formData, setFormData] = useState({
     name: '',
@@ -44,7 +42,6 @@ Detalles: ${formData.details || 'Ninguno'}`;
 
   return (
     <section className="py-24 px-6 lg:px-12 bg-surface-container-low/50" id="contacto">
-      <MapModal isOpen={isMapOpen} onClose={() => setIsMapOpen(false)} />
       <div className="max-w-7xl mx-auto">
         <div className="bg-surface-container-lowest rounded-[2rem] shadow-2xl shadow-black/5 overflow-hidden grid grid-cols-1 lg:grid-cols-2">
           <div className="p-12 lg:p-20 space-y-12 bg-secondary text-white">
@@ -57,12 +54,12 @@ Detalles: ${formData.details || 'Ninguno'}`;
                 <span className="material-symbols-outlined text-primary-container">location_on</span>
                 <div className="text-sm">
                   <p className="font-bold mb-1">{t('Ubicación', 'Location')}</p>
-                  <button 
-                    onClick={() => setIsMapOpen(true)}
+                  <a 
+                    href="#mapa"
                     className="text-white/60 hover:text-primary-container transition-colors block text-left"
                   >
                     3715 NORTHCREST RD SUITE 19<br/>ATLANTA, GA 30340
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="flex items-start gap-4">

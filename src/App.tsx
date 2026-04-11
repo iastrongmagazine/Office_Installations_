@@ -9,6 +9,7 @@ import Services from './components/Services';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
+import MapSection from './components/MapSection';
 import Footer from './components/Footer';
 
 // Force rebuild for color changes
@@ -22,6 +23,7 @@ export default function App() {
         <About />
         <Gallery />
         <Contact />
+        <MapSection />
       </main>
       <Footer />
     </div>

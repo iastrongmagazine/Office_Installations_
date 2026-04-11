@@ -1,11 +1,8 @@
 import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
-import { useState } from 'react';
-import MapModal from './MapModal';
 
 export default function Hero() {
   const { t } = useLanguage();
-  const [isMapOpen, setIsMapOpen] = useState(false);
 
   return (
     <section className="pt-32 pb-20 px-6 lg:px-12 hero-gradient overflow-hidden">
@@ -23,8 +20,8 @@ export default function Hero() {
                 {t('Ingeniería de Gestión de Espacios Corporativos', 'Corporate Space Management Engineering')}
               </span>
             </div>
-            <motion.button 
-              onClick={() => setIsMapOpen(true)}
+            <motion.a 
+              href="#mapa"
               whileHover={{ scale: 1.05, backgroundColor: 'var(--color-primary-container)' }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-2 px-3 py-1 bg-primary-container/20 rounded-full cursor-pointer transition-colors group"
@@ -33,10 +30,8 @@ export default function Hero() {
               <span className="text-[10px] font-bold uppercase tracking-widest text-on-primary-fixed-variant font-headline group-hover:text-secondary">
                 {t('Atlanta y alrededores', 'Atlanta & Surrounding Areas')}
               </span>
-            </motion.button>
+            </motion.a>
           </div>
-
-          <MapModal isOpen={isMapOpen} onClose={() => setIsMapOpen(false)} />
           <h1 className="text-5xl lg:text-7xl font-extrabold font-headline leading-[1.1] tracking-tight text-on-surface">
             {t('Instalación de Mobiliario de Oficina y ', 'Office Furniture Installation & ')}<span className="text-primary-container">{t('Configuración de Espacios', 'Workspace Setup')}</span>
           </h1>
