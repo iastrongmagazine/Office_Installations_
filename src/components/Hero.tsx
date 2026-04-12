@@ -61,12 +61,12 @@ export default function Hero() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-outline-variant/10">
             <div className="space-y-1">
-              <span className="block text-xl font-bold font-headline text-on-surface">{t('8+ Años', '8+ Years')}</span>
-              <span className="block text-xs text-on-surface-variant font-medium">{t('de Experiencia', 'Experience')}</span>
+              <span className="block text-xl font-bold font-headline text-on-surface">{t('8 Años', '8 Years')}</span>
+              <span className="block text-xs text-on-surface-variant font-medium">{t('de Servicio', 'of Service')}</span>
             </div>
             <div className="space-y-1">
-              <span className="block text-xl font-bold font-headline text-on-surface">{t('Precisión', 'Precision')}</span>
-              <span className="block text-xs text-on-surface-variant font-medium">{t('Garantizada', 'Guaranteed')}</span>
+              <span className="block text-xl font-bold font-headline text-on-surface">{t('15 Años', '15 Years')}</span>
+              <span className="block text-xs text-on-surface-variant font-medium">{t('de Experiencia', 'of Experience')}</span>
             </div>
             <div className="space-y-1">
               <span className="block text-xl font-bold font-headline text-on-surface">{t('Licencia', 'Licensed')}</span>

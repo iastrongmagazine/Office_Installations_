@@ -31,7 +31,7 @@ export default function MapSection() {
                   {t('Atlanta y alrededores', 'Atlanta and Surrounding Area')}
                 </h2>
                 <p className="mt-6 text-white/50 text-sm leading-relaxed max-w-sm">
-                  {t('Brindamos servicios de instalación profesional en todo el estado de Georgia, cubriendo Atlanta y todas sus áreas circundantes.', 'Providing professional installation services across the entire state of Georgia, covering Atlanta and all surrounding areas.')}
+                  {t('Brindamos servicios de instalación profesional en todo el estado de Georgia, llegando hasta las fronteras con Florida, Alabama y Tennessee.', 'Providing professional installation services across the entire state of Georgia, reaching the borders of Florida, Alabama, and Tennessee.')}
                 </p>
               </div>
 
@@ -47,12 +47,12 @@ export default function MapSection() {
                 </div>
                 <div className="flex gap-6 group">
                   <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center shrink-0 border border-white/5 group-hover:bg-primary-container/10 transition-colors">
-                    <Globe className="text-primary-container" size={28} />
+                    <Navigation className="text-primary-container" size={28} />
                   </div>
                   <div>
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{t('Ciudades Principales', 'Main Cities')}</p>
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-1">{t('Alcance Regional', 'Regional Reach')}</p>
                     <p className="text-sm font-medium text-white/70 leading-relaxed">
-                      Marietta, Alpharetta, Lawrenceville, Decatur, Smyrna, Sandy Springs, Roswell & Duluth.
+                      {t('Servicio en todo Georgia, llegando a fronteras con Florida, Alabama y Tennessee.', 'Serving all of Georgia, reaching borders with Florida, Alabama, and Tennessee.')}
                     </p>
                   </div>
                 </div>
