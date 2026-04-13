@@ -52,9 +52,9 @@ export default function Services() {
               </span>
               <h3 className="text-2xl font-bold font-headline mb-4">{t('Configuración y Reconfiguración', 'Office Setup & Reconfiguration')}</h3>
               <ul className="space-y-3 text-sm text-on-surface-variant">
-                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-primary-container"></span> {t('Nuevas configuraciones de oficina', 'New office setups')}</li>
-                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-primary-container"></span> {t('Rediseño de espacios de trabajo', 'Workspace redesign')}</li>
-                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-primary-container"></span> {t('Reorganización de mobiliario', 'Furniture rearrangement')}</li>
+                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-primary-container"></span> {t('Configuración de nueva oficina', 'New Office Set up')}</li>
+                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-primary-container"></span> {t('Reconfiguración de estaciones de trabajo', 'Workstation Reconfiguration')}</li>
+                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-primary-container"></span> {t('Reorganización completa de mobiliario', 'Full furniture rearrangement')}</li>
               </ul>
             </div>
           </motion.div>
